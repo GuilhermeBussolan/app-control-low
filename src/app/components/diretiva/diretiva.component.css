@@ -1,0 +1,25 @@
+.text-sucess {
+  color: rgb(255, 255, 255);
+}
+
+.text-danger {
+  background-color: red;
+}
+
+.special {
+  border: 1px solid red;
+  padding: 20px;
+  margin: 20px;
+}
+
+.errorClass {
+  color: red;
+  font-weight: bold;
+}
+
+.preenchePreto{
+  background-color: black;
+  border: 5px solid rgb(6, 155, 254);
+  height: 100px;
+  width: 200px;
+}

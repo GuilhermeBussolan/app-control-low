@@ -1,0 +1,32 @@
+<p>diretiva works!</p>
+
+
+<p [ngClass]="{'errorClass' : hasError}">
+  Guilherme Bussolan
+</p>
+
+<!-- diretiva ng class -->
+<h2 [ngClass]="classes">3 SIS - 2025</h2>
+
+<div [ngClass]="isSpecial ? 'special' : 'preenchePreto'"></div>
+
+
+<!-- diretiva ng style -->
+<h2>Diretiva Style</h2>
+<p [ngStyle]="{'background-color': color, 'font-size': size, 'color': 'red'}">Teste Diretiva Style</p>
+
+
+<!-- diretiva ng model -->
+<h2>Ng Model</h2>
+<label for="exemplo-ngModel">NgModel</label>
+<input [(ngModel)]="currentItem.name" id="name1" />
+
+<p>Campo: {{currentItem.name}}</p>
+
+<p>
+  UpperCase:
+  <input type="text" [ngModel] = "currentItem.name"
+  (ngModelChange)="setUpperCaseName($event)"
+  id="name2"
+  />
+</p>
